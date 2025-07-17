@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>SENAI</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,6 +58,7 @@
             padding: 50px;
             font-size: 32px;
             border-radius: 1%;
+            background: url('imagens/mujer.jpg');
         }
         
         .titulo-secao {
@@ -89,13 +91,55 @@
         img{
             width: 30px;
         }
+        .modal{
+            background-color: white;
+            width: 600px;
+            height: 900px;
+            padding-left: 30PX;
+            padding-top: 10px;
+            box-shadow: #333 0px 0px 100px;
+        }
+        .modal h3{
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-top: 130px;
+        }
+        .modal p{
+            font-size: 32px;
+            margin-left: 20px;
+            padding-top: 200px;
+        }
+        .modal button{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            margin-left: 150px;
+            margin-top: 100px;
+
+        }
+        .modal input{
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .modal textarea{
+            width: 500px;
+            height: 200px;
+            font-size: 20px;
+        }
+
+        
+        
+        
+        
     </style>
 </head>
 <body>
     <div class="cabecalho">
-        <h3>SENAI</h3>
+        <a href="index.html"><h3>SENAI </h3></a>
         <div class="navegacao">
-        <a href="index.html" class="link-menu">Sobre</a>
+        <a href="sobre.html" class="link-menu">Sobre</a>
         <a href="cursos.html" class="link-menu">Cursos</a>
         <a href="contato.html" class="link-menu">Contato</a>
     </div>
@@ -104,13 +148,9 @@
     
     
     <div class="conteudo">
-        <div id="sobre" class="secao">
-            <div class="titulo-secao">Sobre o SENAI</div>
-            <p>O SENAI é uma das principais instituições de educação profissional do Brasil. Nossa missão é preparar os jovens e trabalhadores para o mercado de trabalho com foco em inovação, tecnologia e indústria 4.0.</p>
-        </div>
-        
         <div id="cursos" class="secao">
-            <div class="titulo-secao">Cursos Técnicos</div>
+            <div class="modal">
+                <div class="titulo-secao">Cursos Técnicos</div>
             <div class="lista-cursos">
                 <div class="curso">Técnico em Desenvolvimento de Sistemas</div>
                 <div class="curso">Técnico em Mecatrônica</div>
@@ -119,13 +159,7 @@
                 <div class="curso">Técnico em Administração</div>
             </div>
         </div>
-        
-        <div id="contato" class="secao">
-            <div class="titulo-secao">Contato</div>
-            <p><img src="/imagens/local.png" alt="">Unidade SENAI Central - Rua da Indústria, 123, Centro
-            </p>
-            <p><img src="/imagens/telefone.png" alt="">(11) 4002-8922</p>
-            <p><img src="/imagens/o-email.png" alt="">atendimento@senaibrasil.com.br</p>
+            </div>
         </div>
     </div>
     
